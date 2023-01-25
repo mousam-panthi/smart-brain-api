@@ -11,11 +11,8 @@ const image = require('./controllers/image')
 const db = knex({
   client: 'pg',
   connection: {
-    host : 'dpg-cf7svaun6mplr402v310-a',
-    port : 5432,
-    user : 'smart_brain_database_0mnu_user',
-    password : 'cDG6FnrJhR9cTI2Hxg90vHyuxn3u8ZUZ',
-    database : 'smart_brain_database_0mnu'
+    connectionString : process.env.CYCLIC_DB,
+    ssl: true,
   }
 });
 

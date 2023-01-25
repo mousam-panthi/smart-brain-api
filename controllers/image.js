@@ -1,7 +1,7 @@
 const Clarifai = require('clarifai');
 
 const handleApiCall = (req, res) => {
-	const USER_ID = "mousam_panthi";
+	  const USER_ID = "mousam_panthi";
     const PAT = "01c264f80f0f4474b44bec85153f8fdb";
     const APP_ID = "my-first-application"; 
     const MODEL_ID = "face-detection";
